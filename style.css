@@ -1,0 +1,30 @@
+body {
+	background: #EEE;
+	margin: 0;
+}
+ 
+img {
+	margin-bottom: 5px;
+	width: 230px;
+	border-radius: 7px;
+}
+
+.nav {
+	background: crimson;
+	height: 45px;
+}
+
+.grid {
+	margin: 0 auto;
+	clear: both;
+}
+ 
+.grid-item {
+	/*float: right;*/
+	border: 1px solid lightgray;
+	border-radius: 10px;
+	width: 230px;
+	margin: 10px;
+	padding: 7px;
+	background: #FFF;
+}

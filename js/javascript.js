@@ -1,12 +1,13 @@
-/* init Masonry after all images have been loaded */
+// init Masonry
 var grid = document.querySelector('.grid');
-var msnry;
 
-imagesLoaded( grid, function() {
-  // init Isotope after all images have loaded
-  msnry = new Masonry( grid, {
+var msnry = new Masonry( grid, {
   	isFitWidth: true,
     itemSelector: '.grid-item',
     columnWidth: '.grid-item'
-  });
+});
+
+imagesLoaded( grid ).on( 'progress', function() {
+	// layout Masonry after each image loads
+	msnry.layout();
 });
